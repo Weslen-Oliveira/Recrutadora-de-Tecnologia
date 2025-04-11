@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+:root{
+    --bg-color1: #FFFFFF;
+    --bg-color2: #3A404E;
+    --bg-color3: #8E2424;
+    --text-a: #667085;
+}
+.header{
+    
+    background-color: var(--bg-color);
+    height: 80px;
+    padding: 10px;
+
+}
+.navbar{
+    /*border: 3px solid ;*/
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+.navbar__logo-texto{
+    /*border: 3px solid;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px ;
+}
+h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+.navbar__links{
+   margin-top: 8px;
+  width: 390px;
+  height: 32px;
+  display: flex;
+ 
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+
+}
+a{
+    color: var(--text-a);
+}
+.navbar__button{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 20px;
+    width: 300px;
+    height: 44px;
+    gap: 12px;
+}
+.btn-entrar{
+    background-color: var(--bg-color1);
+    color: var(--text-a);
+    width: 3rem;
+    height: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.btn-cadastrar{
+    background-color: var(--bg-color3);
+    padding: 10px 18px;
+    border-radius: 8px;
+    color: var(--bg-color1);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.secao__sobre{
+    text-align: center;
+    padding: 30px;
+}
+.secao__paragrafo{
+    font-size: 16px;
+    font-weight: 600px;
+    padding: 30px 30px 5px 30px;
+    color: #8E2424;
+}
+.secao__titulo{
+    padding: 30px;
+    font-size: 36px;
+    color: #101828;
+    font-weight: 600px;
+}
+.secao__paragrafo__conteudo{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #667085;
+}
+.secao__numeros{
+    padding: 90px;
+    display: flex;
+    gap: 0px 35px;
+   
+}
+
+@media(max-width: 950px){
+    .secao__sobre{
+        text-align: center;
+        padding: 30px;
+    }
+    .secao__numeros{
+        display: grid;
+        grid-template-columns:  1fr;
+        gap: 0px;
+    }
+    .secao__numeros__card{
+        width: 20rem;
+        padding: 0;
+    }
+}
+@media(max-width: 830px){
+    .navbar__links{
+        padding: 0px 5px;
+        gap: 10px;
+    }
+    .secao__numeros__card{
+      display: grid;
+      grid-template-columns: 2fr;
+    }
+}
+@media(max-width: 750px){
+    .secao__sobre{
+        text-align: center;
+        padding: 10px;
+    }
+    .secao__numeros{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+}
+.secao__numeros__card{
+   
+    width: 30rem;
+    padding-right:50px;
+    
+}
+.secao__numeros__titulo{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #8E2424;
+    line-height: 72px;
+}
+.secao__numeros__subtitulo{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #101828;
+}
+.secao__numeros__texto{
+    font-weight: 400;
+    line-height: 24px;
+    color: #667085;
+}
+@media(max-width: 950px){
+    .secao__numeros{
+        display: grid;
+        grid-template-columns:  2fr 2fr;
+        gap: 0px;
+    }
+    .secao__numeros__card{
+        width: 20rem;
+        padding: 0;
+    }
+    .secao__numeros__texto{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.img__sobre{
+    margin-top: 60px;
+}
+.secao__salario{
+   
+    padding: 10px 400px;
+}
+.secao__salario h1{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 30px;
+}
+.div-salario{
+    padding: 30px;
+}
+h2{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.paragrafo__salario{
+    display: inline;
+    gap: 0px 30px;
+    margin: 0px 20px 0px 0px;
+    line-height: 60px;
+    font-size: 16px;
+    color: #667085;
+}
+.img-avatar{
+    padding-bottom: 30px;
+}
+.secao__sobre input{
+    margin-top: 30px;
+    width: 300px;
+    border: 1px solid #667085;
+    padding: 10px;
+    border-radius: 10px;
+}
+footer{
+    text-align: center;
+    padding: 10px 0px 80px 0px;
+    font-weight: 400;
+    color: #667085;
+}
+
