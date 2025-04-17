@@ -109,45 +109,10 @@ a{
 .secao__numeros{
     padding: 90px;
     display: flex;
-    gap: 0px 35px;
-   
+    gap: 35px;   
 }
 
-@media(max-width: 950px){
-    .secao__sobre{
-        text-align: center;
-        padding: 30px;
-    }
-    .secao__numeros{
-        display: grid;
-        grid-template-columns:  1fr;
-        gap: 0px;
-    }
-    .secao__numeros__card{
-        width: 20rem;
-        padding: 0;
-    }
-}
-@media(max-width: 830px){
-    .navbar__links{
-        padding: 0px 5px;
-        gap: 10px;
-    }
-    .secao__numeros__card{
-      display: grid;
-      grid-template-columns: 2fr;
-    }
-}
-@media(max-width: 750px){
-    .secao__sobre{
-        text-align: center;
-        padding: 10px;
-    }
-    .secao__numeros{
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-}
+
 .secao__numeros__card{
    
     width: 30rem;
@@ -172,32 +137,19 @@ a{
     line-height: 24px;
     color: #667085;
 }
-@media(max-width: 950px){
-    .secao__numeros{
-        display: grid;
-        grid-template-columns:  2fr 2fr;
-        gap: 0px;
-    }
-    .secao__numeros__card{
-        width: 20rem;
-        padding: 0;
-    }
-    .secao__numeros__texto{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
+
 .img__sobre{
     margin-top: 60px;
+    width: 100%;
 }
-.secao__salario{
-   
-    padding: 10px 400px;
+.secao__salario{   
+    padding: 0.8em 25em;
+    text-align: center;
 }
 .secao__salario h1{
     font-size: 20px;
     font-weight: 600;
-    padding: 30px;
+    padding: 1.3em;
 }
 .div-salario{
     padding: 30px;
@@ -233,3 +185,20 @@ footer{
     color: #667085;
 }
 
+@media(max-width: 1200px){
+    .secao__salario{
+        padding: 0.3em 12em;
+    }
+}
+
+@media(max-width: 1000px){
+    .secao__numeros{
+        flex-wrap: wrap;
+        gap: 5em;
+        justify-content: center;
+    }
+    .secao__numeros__card{
+        padding-right: 0;
+        width: 40%;
+    }
+}
